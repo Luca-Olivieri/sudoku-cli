@@ -1,6 +1,9 @@
 use std::io::{self, Write};
 
-fn move_to(col: u16, row: u16) {
+fn move_to(
+    col: u16,
+    row: u16,
+) {
     print!("\x1B[{};{}H", row + 1, col + 1);
 }
 
